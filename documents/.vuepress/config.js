@@ -42,7 +42,7 @@ module.exports = {
     ],
     nav: [
       { text: "HOME", link: "/" },
-      { text: "Tags", link: "/tags/" },
+      { text: "TAGS", link: "/tags/" },
       {
         text: "GitHub",
         link: "https://github.com/je0489/",
