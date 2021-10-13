@@ -1,7 +1,52 @@
+let CONST = require("./const");
+
 module.exports = {
-  title: "TIL", // 사이트 타이틀
+  title: "Today Jieun Learned",
+  head: [
+    [
+      "link",
+      {
+        rel: "icon",
+        href: "/logo.png",
+      },
+    ],
+  ],
+  // base: "/TIL/",
+  // dest: "build",
   themeConfig: {
-    nav: [{ text: "HOME", link: "/" }],
-    sidebar: "auto",
+    sidebar: [
+      {
+        title: "HTML/CSS",
+        children: CONST.HTMLCSSList,
+      },
+      {
+        title: "Javascript",
+        children: CONST.JSList,
+      },
+      {
+        title: "React",
+        children: CONST.reactList,
+      },
+      {
+        title: "Vuepress",
+        children: CONST.vueList,
+      },
+      {
+        title: "Algorithm",
+        children: CONST.algorithmList,
+      },
+      {
+        title: "ETC",
+        children: CONST.ETCList,
+      },
+    ],
+    nav: [
+      { text: "HOME", link: "/" },
+      { text: "Tags", link: "/tags/" },
+      {
+        text: "GitHub",
+        link: "https://github.com/je0489/",
+      },
+    ],
   },
 };
