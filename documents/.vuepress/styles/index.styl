@@ -1,47 +1,30 @@
-@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@600&family=Sunflower:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@600&display=swap')
 
-h1 {
-  font-family: 'Sunflower', sans-serif;
-  font-size: 3rem;
-  letter-spacing: 0.15rem;
-}
+hr
+  width 13%
+  border solid 5px $hrCustomColor
+  margin-left 0
 
-hr {
-  width: 13%;
-  border: solid 5px $barColor;
-  margin-left: 0;
-}
 
-#todayjieunlearned, #tags {
-  font-size: 4rem;
-  a {
-    display: none;
-  }
-}
+@media (max-width: 480px)
+  hr
+    width 23%
 
-#author-jieun-jang-je0489-icloud-com, #started-date-2021-10-12 {
-  font-weight: 300;
-  text-align: right;
-  padding-top: 3.2rem;
-  a.header-anchor {
-    display: none;
-  }
-}
+#todayjieunlearned, #tags
+  font-size 4rem
+  a
+    display none
+  
 
-.site-name {
-  font-family: 'Comfortaa', cursive;
-  font-size: 1.3rem !important;
-  letter-spacing: 0.009rem;
-}
+#author-jieun-jang-je0489-icloud-com, 
+#started-date-2021-10-12 
+  font-weight 300
+  text-align right
+  padding-top 3.2rem
+  a.header-anchor 
+    display none
 
-.content {
-  font-size 30px;
-}
-
-.theme-default-content .content__default {
-  padding: 2rem 5rem;
-}
-
-a.header-anchor {
-  margin-left: -1.2em;
-}
+.site-name 
+  font-family 'Comfortaa', cursive
+  font-size 1.3rem !important
+  letter-spacing 0.009rem
