@@ -8,9 +8,9 @@ custom theme가 적용된 markdown이 표시된다.
 
 # H1
 
-## H2
+<h2> H2 </h2>
 
-### H3
+<h3> H3 </h3>
 
 #### H4
 
@@ -24,17 +24,15 @@ A single backtick in a code span: `` ` ``
 
 A backtick-delimited string in a code span: `` `foo` ``
 
-## 3. Code Block
+## 3. Code Block + Highlight
 
-### text
+<h3> text </h3>
 
-````
 ```
 Look! You can see my backticks.
 ```
-````
 
-### java
+<h3> java </h3>
 
 ```java
 function test() {
@@ -42,9 +40,21 @@ function test() {
 }
 ```
 
-### javascript
+<h3> HTML </h3>
 
-```javascript
+```html {3-5}
+<template>
+  <div id="global-layout">
+    <header><h1>Header</h1></header>
+    <component :is="layout" />
+    <footer><h1>Footer</h1></footer>
+  </div>
+</template>
+```
+
+<h3> javascript </h3>
+
+```javascript {2,3}
 function matchwo(a,b) {
   if (a < b && a < 0) then {
     return 1;
@@ -54,9 +64,9 @@ function matchwo(a,b) {
 }
 ```
 
-### css
+<h3> css </h3>
 
-```css
+```css{1-3}
 h1 {
   color: red;
 }
@@ -66,9 +76,17 @@ p {
 }
 ```
 
-### ruby
+<h3> json </h3>
 
-```ruby
+```json{2}
+"devDependencies": {
+  "vuepress": "^1.5.2",
+}
+```
+
+<h3> ruby </h3>
+
+```ruby{2}
 require 'redcarpet'
 markdown = Redcarpet.new("Hello World!")
 puts markdown.to_html
@@ -78,31 +96,51 @@ puts markdown.to_html
 
 ---
 
-## 5. Link
+## 5. Custom Block
+
+::: tip
+Tip입니다용
+:::
+
+::: warning
+워닝1!
+:::
+
+::: danger
+삐용삐용 댄저댄저
+:::
+
+::: details
+Today  
+I  
+Learned  
+:::
+
+## 6. Link
 
 [Google](http://google.com/)  
 I get 10 times more traffic from [Naver](http://naver.com/ "Nave").
 
-## 6. table
+## 7. Table
 
 | Left-aligned | Center-aligned | Right-aligned |
 | :----------- | :------------: | ------------: |
 | git status   |   git status   |    git status |
 | git diff     |    git diff    |      git diff |
 
-## 7. Task lists
+## 8. Task lists
 
 - [x] #739
 - [ ] https://github.com/octo-org/octo-repo/issues/740
 - [ ] Add delight to the experience when all tasks are complete :tada:
 
-## 8. BlockQuote
+## 9. BlockQuote
 
 > This is a blockquote.
 >
 > > This is the second paragraph in the blockquote.
 
-## 9. Emphasis
+## 10. Emphasis
 
 _single asterisks_  
 _single underscores_  
@@ -111,7 +149,7 @@ _single underscores_
 ~~cancelline~~  
 \*this text is surrounded by literal asterisks\*
 
-## 10. List
+## 11. List
 
 1. 첫번째
 2. 세번째
@@ -122,8 +160,8 @@ _single underscores_
     - 3단계
       - 4단계
 
-### Reference
+<h3> Reference </h3>
 
-- [Daringfireball Markdown 공식 가이드 문서](https://daringfireball.net/projects/markdown/syntax#em)
+- [Daringfireball Markdown 공식 가이드](https://daringfireball.net/projects/markdown/syntax#em)
 - [Github Markdown Spec](https://github.github.com/gfm/)
-- [Github 공식 가이드 문서](https://docs.github.com/en/github/writing-on-github/working-with-advanced-formatting)
+- [Github 공식 가이드](https://docs.github.com/en/github/writing-on-github/working-with-advanced-formatting)
