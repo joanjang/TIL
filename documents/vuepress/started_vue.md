@@ -12,7 +12,7 @@ VuePress 학습 정리에 앞서 이를 구축하게 된 이유는 TIL 문서, �
 
 그러던 중 한재엽님의 [나는 어떻게 개발 공부를 했나, 2편]를 읽으며 <sup>[1]</sup>잘못된 정보를 포스팅해도 괜찮지 않냐는 글을 보고 큰 용기를 얻게 됐고 본격적으로 여러 기술 블로그를 찾아보게 됐다.
 
-비교적 `설치가 간단`하고 `레이아웃이 간단+예쁜` <strong>Static Site Generator(SSG)</strong>를 고르는데 생각보다 많은 시간을 할애했다.
+비교적 `설치가 간단`하고 `레이아웃이 간단, 직관적인` <strong>Static Site Generator(SSG)</strong>를 고르는데 생각보다 많은 시간을 소요했다.
 
 [나는 어떻게 개발 공부를 했나, 2편]: https://jbee.io/essay/how_do_i_study_2/#2-daily-commit-or-today-i-learned
 
@@ -22,7 +22,7 @@ VuePress 학습 정리에 앞서 이를 구축하게 된 이유는 TIL 문서, �
 
 Static Site Generator(SSG)는 정적 사이트를 만들어주는 툴이고 [Jamstack Sites]를 참고하여 아래의 후보 중 고민했다.
 
-- Jekyll: `Ruby 기반` 다양한 테마가 지원되나 마음에 드는 테마가 없음. custom 하기엔 Ruby 언어를 경험해 본 적이 없음.
+- Jekyll: `Ruby 기반` 다양한 테마가 지원되나 심플하면서 직관적인 테마가 없음. custom 하기엔 Ruby 언어를 경험해 본 적이 없음.
 - Hugo: `Go 기반` 빌드가 제일 빠르고 테마가 다양하나 Jekyll와 동일한 이유임.
 - VuePress: `Vue 기반` 기본적으로 제공하는 UI에서 필요한 부분을 custom 하여 나만의 블로그를 만들 수 있음. 현재 UI도 딱 깔끔함 💚
 - Notion: jamstack엔 없지만, 마크다운 기반으로 레이아웃이 심플하나.. 개인 블로그로 관리하기엔 한계가 있을 것 같음.
@@ -33,7 +33,7 @@ Static Site Generator(SSG)는 정적 사이트를 만들어주는 툴이고 [Jam
 
 [jamstack sites]: https://jamstack.org/generators/
 
-## VuePress 설치하기
+## VuePress 시작하기
 
 ### 1. 설치
 
@@ -70,7 +70,7 @@ npm run docs:dev
 
 package.json의 scripts를 수정한 후 VuePress가 실행이 되면 <http://localhost:8080> 에 `Hello VuePress`가 표시된다.
 
-### 3. 환경설정
+### 3. 설정
 
 설치 완료 후 아래와 같은 구조로 디레토리 및 파일을 생성했다. [공식 문서 (디렉토리 구조)]을 참고하여 필요한 파일을 생성하면 된다.
 
@@ -115,6 +115,6 @@ module.exports = {
 [공식 문서 nav]: https://vuepress.vuejs.org/theme/default-theme-config.html#navbar-links
 [공식 문서 basic config]: https://vuepress.vuejs.org/config/#basic-config
 
-<h3>Reference</h3>
+### Reference
 
 - [Vuepress 공식 문서](https://vuepress.vuejs.org/guide/getting-started.html#prerequisites)

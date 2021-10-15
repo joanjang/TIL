@@ -160,7 +160,7 @@ _single underscores_
     - 3단계
       - 4단계
 
-<h3> Reference </h3>
+### Reference
 
 - [Daringfireball Markdown 공식 가이드](https://daringfireball.net/projects/markdown/syntax#em)
 - [Github Markdown Spec](https://github.github.com/gfm/)
