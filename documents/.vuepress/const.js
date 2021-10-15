@@ -1,2 +1,2 @@
-exports.vueList = ["vuepress/init.md"];
-exports.ETCList = ["ETC/markdown.md"];
+exports.vueList = ["vuepress/started_vue.md"];
+exports.ETCList = ["etc/markdown.md"];
