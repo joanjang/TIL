@@ -2,6 +2,7 @@
 
 @require './config'
 @require './code'
+@require './codeblock'
 @require './custom-blocks'
 @require './arrow'
 @require './wrapper'
@@ -96,7 +97,7 @@ kbd
   padding 0 0.15em
 
 blockquote
-  font-size 1rem
+  font-size 0.93rem
   color #999;
   border-left .2rem solid #dfe2e5
   margin 1rem 0
@@ -109,7 +110,7 @@ ul, ol
   padding-left 1.2em
 
 strong
-  font-weight 600
+  font-weight 700
 
 h1, h2, h3, h4, h5, h6
   font-weight 600
@@ -163,6 +164,7 @@ code, kbd, .line-number
 
 p, ul, ol
   line-height 1.7
+  letter-spacing 0.01rem
 
 hr
   border 0
@@ -183,6 +185,18 @@ tr
 th, td
   border 1px solid #dfe2e5
   padding .6em 1em
+
+sup, sub
+  font-size 0.1rem
+  margin-right 0.2rem
+  color $accentColor
+
+aside
+  padding-top 10px
+  color #323232
+
+aside:not(sup):not(sub)
+  font-size 14px
 
 .theme-container
   &.sidebar-open

@@ -1,26 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@600&display=swap')
 
-@require './codeblock'
-
 hr
   width 13%
+  @media (min-width: $MQMobile) and (max-width: 800px)
+    width 23%
+  @media (max-width: 480px)
+    width 23%
   border solid 5px $hrCustomColor
   margin-left 0
-
-@media (max-width 480px)
-  hr
-    width 23%
 
 #todayjieunlearned, #tags
   font-size 4rem
   a
     display none
 
-#author-jieun-jang-je0489-icloud-com, 
-#started-date-2021-10-12 
+#author-jieun-jang-je0489-icloud-com
   font-weight 300
   text-align right
   padding-top 3.2rem
+  a
+    font-weight inherit
+    text-decoration underline
   a.header-anchor 
     display none
 
@@ -28,3 +28,7 @@ hr
   font-family 'Comfortaa', cursive
   font-size 1.3rem !important
   letter-spacing 0.009rem
+
+// link 아이콘 배치
+.icon.outbound
+  left 3px
