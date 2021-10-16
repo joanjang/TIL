@@ -2,6 +2,7 @@ let CONST = require("./const");
 
 module.exports = {
   title: "Today Jieun Learned",
+  description: "Today I Learned TIL by vuepress",
   head: [
     [
       "link",
@@ -12,32 +13,38 @@ module.exports = {
     ],
   ],
   // base: "/TIL/",
-  // dest: "build",
   themeConfig: {
+    sidebarDepth: 3,
     sidebar: [
       {
         title: "HTML/CSS",
         children: CONST.HTMLCSSList,
+        collapsable: CONST.HTMLCSSList ? true : false,
       },
       {
         title: "Javascript",
-        children: CONST.JSList,
+        children: CONST.jsList,
+        collapsable: CONST.jsList ? true : false,
       },
       {
         title: "React",
         children: CONST.reactList,
+        collapsable: CONST.reactList ? true : false,
       },
       {
         title: "Vuepress",
         children: CONST.vueList,
+        collapsable: CONST.vueList ? true : false,
       },
       {
         title: "Algorithm",
         children: CONST.algorithmList,
+        collapsable: CONST.algorithmList ? true : false,
       },
       {
         title: "ETC",
-        children: CONST.ETCList,
+        children: CONST.etcList,
+        collapsable: CONST.etcList ? true : false,
       },
     ],
     nav: [

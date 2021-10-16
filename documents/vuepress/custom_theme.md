@@ -2,7 +2,7 @@
 
 <hr>
 
-기본으로 제공하는 UI 파일이 있기 때문에 원하는 부분만 Custom 하면 될 것 같아서 기본 테마도 너무 깔끔하지만 이번 기회에 경험하고자 한다!
+기본으로 제공하는 UI 파일이 있기 때문에, 원하는 부분만 Custom 하면 될 것 같아서 이번 기회에 경험하고자 한다!
 
 ## 1. Default Theme Source 다운
 
@@ -45,11 +45,11 @@ npm run docs:eject
 
 ## 2. Custom Theme
 
-내 기준 규모가 작은 것부터 큰 것까지 기록해 보려고 한다. <sup>[1]</sup>단, CSS를 통한 style custom 기록은 제외한다! 아래의 레이아웃을 커스텀할 예정이고 TIL 기록하며 틈틈이 작업할 거다.
+그래도 나름 커스텀 한 부분은 사소한 거라도 기록하려고 한다. <sup>[1]</sup>단, CSS를 통한 style custom 기록은 제외한다! 아래의 레이아웃을 커스텀 할 예정이고 틈틈이 작업하며 TIL 기록할 것이다.
 
 - [x] 하단 Navbar 삭제  
        : 사용자 편의상 필요하지 않을 것 같아서 삭제.  
-       이번 VuePress 설치 과정 글들을 제외하고는 서로 연관 없는 글을 작성할 것 같아서 해당 사이트의 의도를 생각했을 때 삭제하는 게 맞는 것 같고 외관상 마음에 듦 (추후에 다시 추가할 수 있음)
+       이번 VuePress 설치 과정 글들을 제외하고는 서로 연관 없는 글을 작성할 것 같아서 해당 사이트의 의도를 생각했을 때 삭제하는 게 맞는 것 같고 외관상 Nav 없는게 더 마음에 듦 (추후에 다시 추가할 수 있음)
 - [x] Sidebar에서 Reference 목록 제외  
        : Sidebar depth를 3으로 설정해놨는데 모든 Reference Header를 \<H3\>으로 지정할거라 사이드바에 목록으로 표시됨. 물론, `###` 대신 `<H3>`을 쓰면 화면에 표시는 안되지만 야매(?)같고.. 그리고 내가 실수할 수도 있으니까~!
 - [ ] 우측 Sidebar 추가  
@@ -62,7 +62,7 @@ npm run docs:eject
 
 ### 2.1. 하단 Nav 삭제
 
-`theme/components/PageNav.vue` 파일을 삭제한 후 아래 하이라이트로 표시된 **Page.vue**에 Nav 정의 구간을 삭제한다. Page.vue의 위치가 변경됐기 때문에 import하고 있는 <u>PageEdit.vue도 수정하진 않았지만 삭제하지 않고</u> 동일한 디렉토리에 넣어줘야한다. (이를 위에서 서로 영향도있는 파일이라고 표현함)
+`theme/components/PageNav.vue` 파일을 삭제한 후 아래 하이라이트로 표시된 **Page.vue**에 Nav 정의 구간을 삭제한다. Page.vue의 위치가 변경됐기 때문에 import하고 있는 <u>PageEdit.vue도 내용은 수정하진 않았지만 삭제하지 않고</u> 동일한 디렉토리에 넣어줘야한다. (이를 위에서 서로 영향도있는 파일이라고 표현함)
 
 ```javascript {6,14,17}
 // theme/components/Page.vue
@@ -94,7 +94,7 @@ export default {
 
 이번 커스텀도 component를 건드려야한다. `theme/components/SidebarLink.vue` 내에서 sublist를 뿌려주는 부분을 찾아 수정했다. 여기도 마찬가지로 <u>util</u> 폴더의 위치가 영향에 끼치니 삭제하지 않고 남겨준다.
 
-sublist 데이터가 넘어올 때 아래의 오브젝트 구조로 들어오는 것을 확인했고 `title 값이 "reference"`로 넘어올 때 로직을 처리해주었다!
+sublist 데이터가 넘어올 때 아래의 오브젝트 구조로 들어오는 것을 확인했고 `title 값이 'ref'로 시작`할 때 로직을 처리해주었다!
 
 ```json
 {
@@ -114,7 +114,7 @@ function renderChildren(h, children, path, route, maxDepth, depth = 1) {
     { class: "sidebar-sub-headers" },
     children.map((c) => {
       // 데이터 처리 로직 추가
-      if (c.title.toLowerCase().trim() === "reference") return null;
+      if (c.title.toLowerCase().trim().startsWith("ref")) return null;
       const active = isActive(route, path + "#" + c.slug);
       return h("li", { class: "sidebar-sub-header" }, [
         renderLink(h, path + "#" + c.slug, c.title, active, c.level - 1),
