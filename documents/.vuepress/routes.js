@@ -1,4 +1,4 @@
-const list = {
+const fileList = {
   javascript: ["syntax"],
   vuepress: ["started_vue", "custom_theme"],
   algorithm: ["graph_search"],
@@ -7,7 +7,7 @@ const list = {
 
 const getRoutes = () => {
   const routes = {};
-  for (const [key, files] of Object.entries(list)) {
+  for (const [key, files] of Object.entries(fileList)) {
     Object.assign(routes, { [key]: files.map((name) => `${key}/${name}.md`) });
   }
   return routes;

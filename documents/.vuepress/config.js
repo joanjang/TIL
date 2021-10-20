@@ -1,4 +1,4 @@
-const ROUTES = require("./const");
+const ROUTES = require("./routes");
 
 module.exports = {
   title: "Today Jieun Learned",
