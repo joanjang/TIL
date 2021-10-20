@@ -6,8 +6,8 @@
   "scripts": {
     "dev": "vuepress dev documents",
     "build": "vuepress build documents",
-    "commit": "vuepress build documents && git add dist && git commit -m `Build: Deploy`",
-    "deploy": "git push -f git@github.com:je0489/TIL.git master:gh-pages --force",
+    "commit": "vuepress build documents && git init && git add build && git commit -m 'Build: Deploy'",
+    "deploy": "git subtree push --prefix build https://github.com/je0489/TIL.git github-pages",
     "eject": "vuepress eject"
   },
   "repository": {
