@@ -12,7 +12,8 @@ module.exports = {
       },
     ],
   ],
-  // base: "/TIL/",
+  base: "/TIL/",
+  dest: "build",
   themeConfig: {
     sidebarDepth: 3,
     sidebar: [
