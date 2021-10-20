@@ -1,4 +1,16 @@
-exports.jsList = ["javascript/syntax.md"];
-exports.vueList = ["vuepress/started_vue.md", "vuepress/custom_theme.md"];
-exports.algorithmList = ["algorithm/graph_search.md"];
-exports.etcList = ["etc/markdown.md"];
+const list = {
+  javascript: ["syntax"],
+  vuepress: ["started_vue", "custom_theme"],
+  algorithm: ["graph_search"],
+  etc: ["markdown"],
+};
+
+const getRoutes = () => {
+  const routes = {};
+  for (const [key, files] of Object.entries(list)) {
+    Object.assign(routes, { [key]: files.map((name) => `${key}/${name}.md`) });
+  }
+  return routes;
+};
+
+module.exports = getRoutes();

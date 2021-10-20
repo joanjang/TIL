@@ -1,4 +1,4 @@
-let CONST = require("./const");
+const ROUTES = require("./const");
 
 module.exports = {
   title: "Today Jieun Learned",
@@ -18,33 +18,33 @@ module.exports = {
     sidebar: [
       {
         title: "HTML/CSS",
-        children: CONST.HTMLCSSList,
-        collapsable: CONST.HTMLCSSList ? true : false,
+        children: ROUTES.HTMLCSSList,
+        collapsable: ROUTES.HTMLCSSList ? true : false,
       },
       {
         title: "Javascript",
-        children: CONST.jsList,
-        collapsable: CONST.jsList ? true : false,
+        children: ROUTES.javascript,
+        collapsable: ROUTES.javascript ? true : false,
       },
       {
         title: "React",
-        children: CONST.reactList,
-        collapsable: CONST.reactList ? true : false,
+        children: ROUTES.reactList,
+        collapsable: ROUTES.reactList ? true : false,
       },
       {
         title: "Vuepress",
-        children: CONST.vueList,
-        collapsable: CONST.vueList ? true : false,
+        children: ROUTES.vuepress,
+        collapsable: ROUTES.vuepress ? true : false,
       },
       {
         title: "Algorithm",
-        children: CONST.algorithmList,
-        collapsable: CONST.algorithmList ? true : false,
+        children: ROUTES.algorithm,
+        collapsable: ROUTES.algorithm ? true : false,
       },
       {
         title: "ETC",
-        children: CONST.etcList,
-        collapsable: CONST.etcList ? true : false,
+        children: ROUTES.etc,
+        collapsable: ROUTES.etc ? true : false,
       },
     ],
     nav: [
