@@ -4,10 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "docs:dev": "vuepress dev documents",
-    "docs:build": "vuepress build documents",
-    "docs:eject": "vuepress eject",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "vuepress dev documents",
+    "build": "vuepress build documents",
+    "commit": "vuepress build documents && git add dist && git commit -m `Build: Deploy`",
+    "deploy": "git push -f git@github.com:je0489/TIL.git master:gh-pages --force",
+    "eject": "vuepress eject"
   },
   "repository": {
     "type": "git",

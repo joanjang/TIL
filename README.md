@@ -16,5 +16,4 @@
 }
 ```
 
-Author - jieun jang <<je0489@icloud.com>>   
-Started Date - 2021/10/12
+Author - jieun jang <<je0489@icloud.com>>

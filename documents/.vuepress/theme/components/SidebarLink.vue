@@ -87,7 +87,7 @@ function renderChildren(h, children, path, route, maxDepth, depth = 1) {
     "ul",
     { class: "sidebar-sub-headers" },
     children.map((c) => {
-      if (c.title.toLowerCase().trim() === "reference") return null;
+      if (c.title.toLowerCase().trim().startsWith("ref")) return null;
       const active = isActive(route, path + "#" + c.slug);
       return h("li", { class: "sidebar-sub-header" }, [
         renderLink(h, path + "#" + c.slug, c.title, active, c.level - 1),
