@@ -74,12 +74,13 @@ package.json의 scripts를 수정한 후 VuePress가 실행이 되면 <http://lo
 
 설치 완료 후 아래와 같은 구조로 디레토리 및 파일을 생성했다. [공식 문서 (디렉토리 구조)]을 참고하여 필요한 파일을 생성하면 된다.
 
-```{3-8}
+```
+// .vuepress 내 Dir 및 파일 생성
 .TIL
 ├── documents
 │   ├── .vuepress (Optional)
 │   │    ├── public (Optional)
-│   │    ├── styles (Optional)  /* 일부 CSS를 수정하기 위해 추가 */
+│   │    ├── styles (Optional)  /* 일부 custom을 위해 추가 */
 │   │    │   ├── index.styl
 │   │    │   └── palette.styl
 │   │    ├── config.js (Optional)
