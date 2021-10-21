@@ -8,8 +8,8 @@
 
 VuePress 설치했을 때처럼 필요한 디렉토리와 파일을 생성해도 되지만 필자는 `vuepress eject` 명령어를 사용해 Default Theme Source Code를 내려받았다.
 
-```json
-// package.json의 scripts에 eject 추가
+```json{6}
+// package.json의 scripts에 추가
 {
   "scripts": {
     "docs:dev": "vuepress dev documents",
@@ -64,7 +64,7 @@ npm run docs:eject
 
 `theme/components/PageNav.vue` 파일을 삭제한 후 아래 하이라이트로 표시된 **Page.vue**에 Nav 정의 구간을 삭제한다. Page.vue의 위치가 변경됐기 때문에 import하고 있는 <u>PageEdit.vue도 내용은 수정하진 않았지만 삭제하지 않고</u> 동일한 디렉토리에 넣어줘야한다. (이를 위에서 서로 영향도있는 파일이라고 표현함)
 
-```javascript
+```javascript {6,14,17}
 // theme/components/Page.vue
 // ... 생략
     <Content class="theme-default-content" />
@@ -81,8 +81,7 @@ import PageEdit from '@theme/components/PageEdit.vue'
 import PageNav from '@theme/components/PageNav.vue'   /** [삭제] **/
 
 export default {
-  components: { PageEdit, PageNav },
-  /** [변경] components: { PageEdit }, **/
+  components: { PageEdit, PageNav }, /** [변경] components: { PageEdit }, **/
   props: ['sidebarItems']
 }
 </script>
@@ -105,7 +104,7 @@ sublist 데이터가 넘어올 때 아래의 오브젝트 구조로 들어오는
 }
 ```
 
-```javascript
+```javascript {9-10}
 // theme/components/SidebarLink.vue
 // ... 생략
 function renderChildren(h, children, path, route, maxDepth, depth = 1) {

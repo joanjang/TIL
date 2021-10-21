@@ -4,7 +4,7 @@
 
 그 날 새로 배운 학습 내용이나 개발관련 경험을 글로 정리하고 아래의 규칙을 따른다.
 
-```javascript
+```typescript
 {
     rules: [
         '반드시 reference를 기재한다.',
