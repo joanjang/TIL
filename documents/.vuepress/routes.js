@@ -1,6 +1,6 @@
 const fileList = {
   javascript: ["syntax"],
-  vuepress: ["started_vue", "custom_theme"],
+  vuepress: ["started_vue", "custom_theme", "deploy"],
   algorithm: ["graph_search"],
   etc: ["markdown"],
 };
