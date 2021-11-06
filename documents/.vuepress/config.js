@@ -52,8 +52,22 @@ module.exports = {
       { text: "HOME", link: "/" },
       { text: "TAGS", link: "/tags/" },
       {
-        text: "GitHub",
-        link: "https://github.com/je0489/",
+        text: "Info",
+        items: [
+          {
+            text: "ABOUT ME",
+            items: [
+              {
+                text: "Portfolio",
+                link: "https://je0489.github.io/simple-portfolio/",
+              },
+              {
+                text: "GitHub",
+                link: "https://github.com/je0489/",
+              },
+            ],
+          },
+        ],
       },
     ],
   },
