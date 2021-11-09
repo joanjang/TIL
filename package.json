@@ -8,6 +8,7 @@
     "build": "vuepress build documents",
     "commit": "vuepress build documents && git init && git add build && git commit -m 'Build: Deploy'",
     "deploy": "git subtree push --prefix build https://github.com/je0489/TIL.git gh-pages",
+    "gh-pull": "git pull origin master",
     "eject": "vuepress eject"
   },
   "repository": {
@@ -20,7 +21,11 @@
     "url": "https://github.com/je0489/TIL/issues"
   },
   "devDependencies": {
-    "vuepress": "^1.8.2",
-    "prettier": "^2.3.2"
+    "@vuepress/plugin-back-to-top": "^1.8.2",
+    "@vuepress/plugin-google-analytics": "^1.8.2",
+    "@vuepress/plugin-medium-zoom": "^1.8.2",
+    "@vuepress/plugin-nprogress": "^1.8.2",
+    "prettier": "^2.3.2",
+    "vuepress": "^1.8.2"
   }
 }

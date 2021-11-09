@@ -71,4 +71,18 @@ module.exports = {
       },
     ],
   },
+  markdown: {
+    lineNumbers: true,
+  },
+  plugins: {
+    "@vuepress/back-to-top": true,
+    "@vuepress/nprogress": true,
+    "@vuepress/google-analytics": true,
+    "@vuepress/medium-zoom": {
+      options: {
+        margin: 25,
+        background: "#00000080",
+      },
+    },
+  },
 };
