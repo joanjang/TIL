@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Sunflower:wght@500&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Sunflower:wght@500&family=Comfortaa:wght@600&display=swap')
 
 @require './config'
 @require './code'
@@ -34,6 +34,13 @@ body
   box-sizing border-box
   border-bottom 1px solid $borderColor
 
+.site-name 
+  font-family 'Comfortaa', sans-serif
+  font-size 1.3rem !important
+  @media (max-width: $MQMobileNarrow)
+    font-size 1.25rem !important
+  letter-spacing 0.009rem
+  
 .sidebar-mask
   position fixed
   z-index 9
@@ -211,6 +218,9 @@ aside:not(sup):not(sub)
 
     .sidebar
       top 0
+
+.icon.outbound
+  left 3px
 
 @media (min-width: ($MQMobile + 1px))
   .theme-container.no-sidebar
