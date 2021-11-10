@@ -19,8 +19,8 @@ module.exports = {
     sidebar: [
       {
         title: "HTML/CSS",
-        children: ROUTES.HTMLCSSList,
-        collapsable: ROUTES.HTMLCSSList ? true : false,
+        children: ROUTES.htmlcss,
+        collapsable: ROUTES.htmlcss ? true : false,
       },
       {
         title: "Javascript",
@@ -29,8 +29,8 @@ module.exports = {
       },
       {
         title: "React",
-        children: ROUTES.reactList,
-        collapsable: ROUTES.reactList ? true : false,
+        children: ROUTES.react,
+        collapsable: ROUTES.react ? true : false,
       },
       {
         title: "Vuepress",
@@ -58,12 +58,12 @@ module.exports = {
             text: "ABOUT ME",
             items: [
               {
-                text: "Portfolio",
-                link: "https://je0489.github.io/simple-portfolio/",
-              },
-              {
                 text: "GitHub",
                 link: "https://github.com/je0489/",
+              },
+              {
+                text: "Portfolio",
+                link: "https://je0489.github.io/simple-portfolio/",
               },
             ],
           },
@@ -73,6 +73,9 @@ module.exports = {
   },
   markdown: {
     lineNumbers: true,
+    extendMarkdown: (md) => {
+      md.use(require("markdown-it-task-lists"));
+    },
   },
   plugins: {
     "@vuepress/back-to-top": true,

@@ -25,6 +25,7 @@
     "@vuepress/plugin-google-analytics": "^1.8.2",
     "@vuepress/plugin-medium-zoom": "^1.8.2",
     "@vuepress/plugin-nprogress": "^1.8.2",
+    "markdown-it-task-lists": "^2.1.1",
     "prettier": "^2.3.2",
     "vuepress": "^1.8.2"
   }
