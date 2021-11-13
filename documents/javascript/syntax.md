@@ -92,8 +92,8 @@ const reg = /(pattern)/(flags)
 |    \b     | (**B**oundary) 단어의 경계. 즉, 단어의 처음/끝          |
 |    \B     | 단어의 경계가 아닌 문자. 즉, 단어의 처음/끝이 아닌 문자 |
 
-<aside><sup>[1]</sup> ① <u>/(?:abc)+/</u>는 패턴 "abc"가 1회 이상 반복되는 문자열이 매칭됨</br>
-&nbsp;&nbsp;&nbsp;&nbsp; ② <u>/abd+/</u>는 문자열 "ab" 뒤에 패턴 "c"가 1회 이상 반복되는 문자열이 매칭됨</aside>
+<div class="footnote"><sup>[1]</sup> ① <u>/(?:abc)+/</u>는 패턴 "abc"가 1회 이상 반복되는 문자열이 매칭됨</br>
+&nbsp;&nbsp;&nbsp;&nbsp; ② <u>/abd+/</u>는 문자열 "ab" 뒤에 패턴 "c"가 1회 이상 반복되는 문자열이 매칭됨</div>
 
 #### 갯수 패턴 - 수량자
 
@@ -106,7 +106,7 @@ const reg = /(pattern)/(flags)
 |  {n,}   | 앞의 표현식이 최소 n회 이상 (단, n은 양의 정수)                                                                                                                                                        |
 | {n, m}  | 앞의 표현식이 최소 n회 이상 최대 m회 이하 (단, n, m은 양의 정수, n <= m)                                                                                                                               |
 
-<aside><sup>[1]</sup> 수량자 *, +, {} 패턴 뒤에 ? 패턴 사용 시 가능한 가장 적은 문자열을 매칭시킴
+<div class="footnote"><sup>[1]</sup> 수량자 *, +, {} 패턴 뒤에 ? 패턴 사용 시 가능한 가장 적은 문자열을 매칭시킴
 
 ```javascript
 /\d+/.exec("345abc"); // \d(345)와 매칭됨
@@ -116,7 +116,7 @@ const reg = /(pattern)/(flags)
 <sup>[2]</sup> x(?=y)는 'x' + 'y' 형식인 문자열을 매칭시킴<br/>
 <sup>[3]</sup> x(?!y)는 'x'뒤에 'y'가 아닌 문자열을 매칭시킴
 
-</aside>
+</div>
 
 ### 3.4. 메소드
 
@@ -140,6 +140,6 @@ const reg = /(pattern)/(flags)
 
 ### Reference
 
-- Youtuber 드림코딩님의 [자바스크립트 프로처럼 쓰는 팁 ✨](https://vuepress.vuejs.org/theme/)
+- Youtube 드림코딩님의 [자바스크립트 프로처럼 쓰는 팁 ✨](https://vuepress.vuejs.org/theme/)
 - [MDN 문서 - 정규 표현식](https://developer.mozilla.org/ko/docs/Web/JavaScript/Guide/Regular_Expressions)
 - [정규표현식(Regular Expression) 기초/기본 쉽고 상세한 사용 방법 정리](https://curryyou.tistory.com/234)

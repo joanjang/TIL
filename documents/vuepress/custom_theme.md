@@ -58,7 +58,7 @@ npm run docs:eject
 
 > Check box는 GFM(GitHub Flavoured Markdown)이라 적용이 안된다고 한다. plug-in 설치로 해결할 예정
 
-<aside><sup>[1]</sup> 너무 사소하고 디테일하기 때문에 다루지 않을 것</aside>
+<div class="footnote"><sup>[1]</sup> 너무 사소하고 디테일하기 때문에 다루지 않을 것</div>
 
 ### 2.1. 하단 Nav 삭제
 

@@ -199,11 +199,11 @@ sup, sub
   margin-right 0.2rem
   color $accentColor
 
-aside
+.footnote
   padding-top 10px
   color #323232
 
-aside:not(sup):not(sub)
+.footnote:not(sup):not(sub)
   font-size 14px
 
 .theme-container
@@ -232,6 +232,35 @@ aside:not(sup):not(sub)
     margin-right 0.3rem
     margin-left -1rem
   }
+
+  // input[type=checkbox] {
+  //   visibility hidden
+  //   margin-top 0
+  //   margin-right -0.7rem
+  // }
+
+  // input[type=checkbox]:checked:after {
+  //   display unset
+  //   background-color $accentColor
+  //   padding 0.02rem 0.25rem
+  //   content "\2713"
+  // }
+
+  // input[type=checkbox]:after {
+  //   visibility visible
+  //   display inline-block
+  //   width 5px
+  //   height 5px
+  //   margin-top -0.2rem 
+  //   margin-left -1.25rem
+  //   padding 0.3rem
+  //   vertical-align middle
+  //   background-color $borderColor
+  //   color #fff
+  //   border 1px solid $accentColor
+  //   border-radius 0.3rem
+  //   content " "
+  // }
 }
 
 @media (min-width: ($MQMobile + 1px))

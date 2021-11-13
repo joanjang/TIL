@@ -16,7 +16,7 @@ Github page를 이용해 블로그를 호스팅하고 싶어서 <strong>Static S
 
 [나는 어떻게 개발 공부를 했나, 2편]: https://jbee.io/essay/how_do_i_study_2/#2-daily-commit-or-today-i-learned
 
-<aside><sup>[1]</sup> 물론 오류를 최소화하는게 우선이고, 댓글 기능을 추가하여 피드백을 받을 예정이다.</aside>
+<div class="footnote"><sup>[1]</sup> 물론 오류를 최소화하는게 우선이고, 댓글 기능을 추가하여 피드백을 받을 예정이다.</div>
 
 ## Static Site Generator
 
