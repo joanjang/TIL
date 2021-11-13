@@ -1,5 +1,17 @@
 const ROUTES = require("./routes");
 
+const createSidebar = () =>
+  ["HTML/CSS", "Javascript", "React", "Vuepress", "Algorithm", "ETC"].map(
+    (title) => {
+      const children = ROUTES[title.replace(/\//, "").toLowerCase()];
+      return {
+        title,
+        children,
+        collapsable: children ? true : false,
+      };
+    }
+  );
+
 module.exports = {
   title: "Today Jieun Learned",
   description: "Today I Learned TIL by vuepress",
@@ -16,38 +28,7 @@ module.exports = {
   dest: "build",
   themeConfig: {
     sidebarDepth: 3,
-    sidebar: [
-      {
-        title: "HTML/CSS",
-        children: ROUTES.htmlcss,
-        collapsable: ROUTES.htmlcss ? true : false,
-      },
-      {
-        title: "Javascript",
-        children: ROUTES.javascript,
-        collapsable: ROUTES.javascript ? true : false,
-      },
-      {
-        title: "React",
-        children: ROUTES.react,
-        collapsable: ROUTES.react ? true : false,
-      },
-      {
-        title: "Vuepress",
-        children: ROUTES.vuepress,
-        collapsable: ROUTES.vuepress ? true : false,
-      },
-      {
-        title: "Algorithm",
-        children: ROUTES.algorithm,
-        collapsable: ROUTES.algorithm ? true : false,
-      },
-      {
-        title: "ETC",
-        children: ROUTES.etc,
-        collapsable: ROUTES.etc ? true : false,
-      },
-    ],
+    sidebar: createSidebar(),
     nav: [
       { text: "HOME", link: "/" },
       { text: "TAGS", link: "/tags/" },
@@ -72,7 +53,7 @@ module.exports = {
     ],
   },
   markdown: {
-    lineNumbers: true,
+    lineNumbers: false,
     extendMarkdown: (md) => {
       md.use(require("markdown-it-task-lists"));
     },
