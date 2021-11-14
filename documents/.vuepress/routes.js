@@ -1,4 +1,5 @@
 const fileList = {
+  htmlcss: { web: ["web"], html: [], css: [] },
   javascript: ["syntax"],
   vuepress: ["started_vue", "custom_theme", "deploy"],
   algorithm: ["graph_search"],
