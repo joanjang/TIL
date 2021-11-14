@@ -201,7 +201,7 @@ sup, sub
 
 .footnote
   padding-top 10px
-  color #323232
+  color inherit
 
 .footnote:not(sup):not(sub)
   font-size 14px
@@ -225,13 +225,28 @@ sup, sub
 .go-to-top
   bottom 3rem !important
 
-.contains-task-list li {
+.theme-default-content > :not([id^="ref"]) + ul > li:not(.task-list-item)
+  &::marker
+    content "✓ "
+    color $accentColor
+  
+  &:only-of-type::marker
+    font-weight bold
+
+  & ul > li
+    &::marker
+      content "− "
+      color $accentColor
+
+    &:only-of-type::marker
+      font-weight bold
+
+.contains-task-list li
   list-style-type none
 
-  input[type=checkbox] {
+  input[type=checkbox]
     margin-right 0.3rem
     margin-left -1rem
-  }
 
   // input[type=checkbox] {
   //   visibility hidden
@@ -261,7 +276,6 @@ sup, sub
   //   border-radius 0.3rem
   //   content " "
   // }
-}
 
 @media (min-width: ($MQMobile + 1px))
   .theme-container.no-sidebar
