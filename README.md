@@ -2,6 +2,10 @@
 
 ---
 
+[www.je0489.github.io/TIL](https://je0489.github.io/TIL/)
+
+[!TIL_preview](./til_preview.gif)
+
 그 날 새로 배운 학습 내용이나 개발관련 경험을 글로 정리하고 아래의 규칙을 따른다.
 
 ```javascript
