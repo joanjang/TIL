@@ -21,7 +21,7 @@
 
 ### TIL
 
-> [황준일님의 TIL](https://junilhwang.github.io/TIL/Vuepress/Theme/#using-theme)
+> [황준일님의 TIL](https://junilhwang.github.io/TIL/)
 >
 > > [황준일님의 TIL github](https://github.com/JunilHwang/TIL)
 
@@ -37,6 +37,7 @@
 
 ### ETC
 
+> [Frontend Developer Loadmap 2021ver.](https://roadmap.sh/frontend)  
 > [해커랭크(SQLCertificate)](https://softworking.tistory.com/502?category=775346)  
 > [To-Do-List](https://sunnyk.tistory.com/category/FE%EA%B0%9C%EB%B0%9C%EC%9D%84%20%EC%9C%84%ED%95%9C%20JS%20%EC%8A%A4%ED%84%B0%EB%94%94)  
 > [Figma와 Zeplin 통합 버전 2.0 소개글](https://m.blog.naver.com/tangunsoft/222101958092) 단군소프트 블로그  
