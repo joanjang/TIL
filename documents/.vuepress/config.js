@@ -3,11 +3,21 @@ const ROUTES = require("./routes");
 const createSidebar = () =>
   ["HTML/CSS", "Javascript", "React", "Vuepress", "Algorithm", "ETC"].map(
     (title) => {
-      const children = ROUTES[title.replace(/\//, "").toLowerCase()];
+      const child = ROUTES[title.replace(/\//, "").toLowerCase()];
       return {
         title,
-        children,
-        collapsable: children ? true : false,
+        children:
+          Array.isArray(child) || !child
+            ? child
+            : Object.entries(child).map(([title, children]) => {
+                return {
+                  title,
+                  children,
+                  collapsable: children.length > 0 ? true : false,
+                };
+              }),
+        initialOpenGroupIndex: -1,
+        collapsable: child ? true : false,
       };
     }
   );
