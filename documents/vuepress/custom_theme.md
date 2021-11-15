@@ -56,7 +56,7 @@ npm run docs:eject
        : Gitbook에 포함된 기본 UI 레이아웃 중 하나로, 기록한 글이 많아졌을 때 Sidebar Depth 3와 함께 목록에 보인다면 난잡해보일 것 같아서 개인적으로 따로 구현해보고 싶은 레이아웃!  
        (Vue도 안써봤는데 과연 만들 수 있을지는 모르겠다. 그리고 과연 언제 만들 수 있을지)
 
-> Check box는 GFM(GitHub Flavoured Markdown)이라 적용이 안된다고 한다. plug-in 설치로 해결할 예정
+> Check box는 GFM(GitHub Flavoured Markdown)이라 적용이 안된다고 한다... plug-in으로 해결 예정 ➲ 완료
 
 <div class="footnote"><sup>[1]</sup> 너무 사소하고 디테일하기 때문에 다루지 않을 것</div>
 

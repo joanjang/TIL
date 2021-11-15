@@ -55,13 +55,12 @@ Standford Research Insitute라는 단체가 전 세계의 <sup>[5]</sup>hosts �
 
 ### HTTP 메세지
 
-<sup>[6]</sup> HTTP 통신을 통해 생성되며 Request와 Response 메세지로 구성된다. HTTP 통신을 통해 생성되는 <sup>[7]</sup>**네트워크로 전송되는 데이터**이므로 `HTTP 패킷`이라고도 불린다.
+HTTP(HyperText Transfer Protocol)란? `웹 페이지 전송을 위한 통신 규약`이다. HTTP 메세지는 그 프로토콜을 통해 생성되고 Request와 Response 메세지로 구성된다. HTTP 통신을 통해 생성되는 <sup>[6]</sup>**네트워크로 전송되는 데이터**이므로 <u>HTTP 패킷</u>이라고도 불린다.
 
-크게 Header와 Body로 나뉘고 개발자 도구의 Network 탭에서 확인할 수 있다.
+크게 Header와 Body로 나뉘며 개발자 도구의 Network 탭에서 확인할 수 있다.
 
 <div class="footnote">
-    <sup>[6]</sup> HyperText Transfer Protocol의 약자로, 웹 페이지 전송을 위한 통신 규약<br>
-    <sup>[7]</sup> 이를 패킷이라고 함
+    <sup>[6]</sup> 이를 패킷이라고 한다.
 </div>
 
 ### Reference
