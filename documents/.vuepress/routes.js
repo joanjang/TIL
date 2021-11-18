@@ -1,22 +1,27 @@
 const fileList = {
-  htmlcss: { web: ["web"], html: [], css: ["selector", "pseudo"] },
-  javascript: ["this", "syntax"],
+  htmlcss: [{ web: ["web"], html: [], css: ["selector"] }],
+  javascript: ["this", "prototype", "syntax"],
   vuepress: ["started_vue", "custom_theme", "deploy"],
   algorithm: ["graph_search"],
-  etc: ["markdown"],
+  etc: [{ git: ["command"] }, "markdown"],
 };
 
 const getRoutes = () => {
   const routes = {};
+
+  const forObject = (files) =>
+    Object.keys(files).reduce((acc, key) => {
+      acc[key] = files[key].map((name) => `${key}/${name}.md`);
+      return acc;
+    }, {});
+
   for (const [key, files] of Object.entries(fileList))
     Object.assign(routes, {
-      [key]: Array.isArray(files)
-        ? files.map((name) => `${key}/${name}.md`)
-        : Object.keys(files).reduce((acc, key) => {
-            acc[key] = files[key].map((name) => `${key}/${name}.md`);
-            return acc;
-          }, {}),
+      [key]: files.map((name) =>
+        typeof name === "string" ? `${key}/${name}.md` : forObject(name)
+      ),
     });
+
   return routes;
 };
 

@@ -7,15 +7,19 @@ const createSidebar = () =>
       return {
         title,
         children:
-          Array.isArray(child) || !child
+          !child || child.every((file) => typeof file === "string")
             ? child
-            : Object.entries(child).map(([title, children]) => {
-                return {
-                  title,
-                  children,
-                  collapsable: children.length > 0 ? true : false,
-                };
-              }),
+            : child.flatMap((child) =>
+                typeof child === "string"
+                  ? child
+                  : Object.entries(child).map(([title, children]) => {
+                      return {
+                        title,
+                        children,
+                        collapsable: children.length > 0 ? true : false,
+                      };
+                    })
+              ),
         initialOpenGroupIndex: -1,
         collapsable: child ? true : false,
       };
