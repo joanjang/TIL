@@ -51,7 +51,7 @@ git subtree push --prefix build https://github.com/je0489/TIL.git gh-pages
 
 Github의 웹호스팅할 저장소 홈페이지로 들어가 `Settings > pages`에서 브랜치와 루트를 아래와 같이 설정해주면 끝~~~!
 
-![Github_pages_setting](./gh_pages_setting.png)
+![Github_pages_setting](../image/vuepress/gh_pages_setting.png)
 
 ### Reference
 

@@ -78,7 +78,7 @@ fruit.func(); // 주체가 window(global)가 됨 → 스코프 체인
 > console.log(func2(1, 2, 3, 4));
 > ```
 >
-> ![arguments_refError](./arrowfunc_arguments_error.png)
+> ![arguments_refError](../image/javascript/arrowfunc_arguments_error.png)
 
 ### Reference
 
