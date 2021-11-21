@@ -12,13 +12,11 @@ const createSidebar = () =>
             : child.flatMap((child) =>
                 typeof child === "string"
                   ? child
-                  : Object.entries(child).map(([title, children]) => {
-                      return {
-                        title,
-                        children,
-                        collapsable: children.length > 0 ? true : false,
-                      };
-                    })
+                  : Object.entries(child).map(([title, children]) => ({
+                      title,
+                      children,
+                      collapsable: children.length > 0 ? true : false,
+                    }))
               ),
         initialOpenGroupIndex: -1,
         collapsable: child ? true : false,
