@@ -1,5 +1,7 @@
 const fileList = {
-  htmlcss: [{ web: ["web"], html: [], css: ["selector", "pseudo"] }],
+  htmlcss: [
+    { web: ["web"], html: ["dom"], css: ["selector", "pseudo", "animation"] },
+  ],
   javascript: ["this", "prototype", "syntax"],
   vuepress: ["started_vue", "custom_theme", "deploy"],
   algorithm: ["graph_search"],
