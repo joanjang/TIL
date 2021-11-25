@@ -100,7 +100,7 @@ selector {
 
 ## animation
 
-transition과 마찬가지로 animation과 관련된 속성들의 축약형 속성이다. 이 속성은 @keyframes와 아주 밀접한 관계가 있다.
+transition과 마찬가지로 animation과 관련된 속성들의 축약형 속성이다. 이 속성은 @keyframes와 아주 밀접한 관계가 있다. animation-name은 숫자로 시작하거나 언더바(\_), 하이픈(-)이 아닌 특수 문자가 포함되는 경우 인식되지 않는다.
 
 ```css
 selector {
@@ -115,15 +115,13 @@ selector {
   * 8. animation-play-state (running)
  **/
   animation: 이름 | 재생 시간 | 타이밍 방식(시간당 속도) | 지연 시간 | 효과 반복
-    횟수 | 효과 진행 방향 | 효과 실행 전과 종료 후 상태 | 실행 상태;
+    횟수 | 효과 진행 방향 | 효과 종료 후 상태 | 실행 상태;
 }
 ```
 
-숫자나 특수문자로 시작한 애니메이션 이름은 유효하지 않는다.
-
-<iframe height="300" style="width: 100%;" scrolling="no" title="Untitled" src="https://codepen.io/je0489/embed/JjyQNMN?default-tab=result&editable=true" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+<iframe height="300" style="width: 100%;" scrolling="no" title="CSS  Animation_animation" src="https://codepen.io/je0489/embed/JjyQNMN?default-tab=css%2Cresult&editable=true" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href="https://codepen.io/je0489/pen/JjyQNMN">
-  Untitled</a> by jieun jang (<a href="https://codepen.io/je0489">@je0489</a>)
+  CSS  Animation_animation</a> by jieun jang (<a href="https://codepen.io/je0489">@je0489</a>)
   on <a href="https://codepen.io">CodePen</a>.
 </iframe>
 
@@ -136,7 +134,7 @@ selector {
 - alternate: 정방향과 역방향을 번갈아가며 애니메이션 재생시킴. (홀수는 정방향/짝수는 역방향)
 - alternate-reverse: 역방향과 정방향을 번갈아가며 애니메이션 재생시킴. (홀수는 역방향/짝수는 정방향)
 
-<iframe height="300" style="width: 100%;" scrolling="no" title="CSS  Animation_animation-direction" src="https://codepen.io/je0489/embed/XWaLaGr?default-tab=result&editable=true" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+<iframe height="300" style="width: 100%;" scrolling="no" title="CSS  Animation_animation-direction" src="https://codepen.io/je0489/embed/XWaLaGr?default-tab=css%2Cresult&editable=true" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href="https://codepen.io/je0489/pen/XWaLaGr">
   CSS  Animation_animation-direction</a> by jieun jang (<a href="https://codepen.io/je0489">@je0489</a>)
   on <a href="https://codepen.io">CodePen</a>.
@@ -144,14 +142,14 @@ selector {
 
 ### fill-mode
 
-애니메이션이 시작되기 전이나 종료 후 적용될 애니메이션 상태를 정의하는 속성이다. 속성값은 아래와 같다.
+애니메이션 종료 후 적용할 상태를 정의하는 속성이다. 속성값은 아래와 같다.
 
-- forwards: 애니메이션 시작전까지는 원래 위치에서 대기 > 요소가 애니메이션 끝나는 위치에서 멈춤
-- backwards: 페이지가 로딩되면 곧장 애니메이션 시작 위치로 이동 > 끝나면 원래 위치로 돌아감
-- both: 위 둘 효과를 모두 적용
-- none: 애니메이션 시작전까지는 원래 위치에서 대기 > 끝나면 원래 위치로 돌아감
+- forwards: 상태 유지
+- backwards: 원래 상태로 돌아옴
+- both: forwards와 backwards를 모두 유지
+- none: 별도의 상태를 설정하지 않음
 
-<iframe height="300" style="width: 100%;" scrolling="no" title="CSS  Animation_animation-fill-mode" src="https://codepen.io/je0489/embed/RwZzZOg?default-tab=result&editable=true" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+<iframe height="300" style="width: 100%;" scrolling="no" title="CSS  Animation_animation-fill-mode" src="https://codepen.io/je0489/embed/RwZzZOg?default-tab=css%2Cresult&editable=true" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href="https://codepen.io/je0489/pen/RwZzZOg">
   CSS  Animation_animation-fill-mode</a> by jieun jang (<a href="https://codepen.io/je0489">@je0489</a>)
   on <a href="https://codepen.io">CodePen</a>.
@@ -161,7 +159,7 @@ selector {
 
 애니메이션 실행 상태를 정의하는 속성이다. 속성값으로는 running(재생)과 paused(일시정지)가 있다.
 
-<iframe height="300" style="width: 100%;" scrolling="no" title="CSS  Animation_animation-play-state" src="https://codepen.io/je0489/embed/wvqLqbj?default-tab=result&editable=true" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+<iframe height="330" style="width: 100%;" scrolling="no" title="CSS  Animation_animation-play-state" src="https://codepen.io/je0489/embed/wvqLqbj?default-tab=js%2Cresult&editable=true" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href="https://codepen.io/je0489/pen/wvqLqbj">
   CSS  Animation_animation-play-state</a> by jieun jang (<a href="https://codepen.io/je0489">@je0489</a>)
   on <a href="https://codepen.io">CodePen</a>.
