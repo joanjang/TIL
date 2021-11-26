@@ -2,7 +2,7 @@ const fileList = {
   htmlcss: [
     { web: ["web"], html: ["dom"], css: ["selector", "pseudo", "animation"] },
   ],
-  javascript: ["this", "prototype", "syntax"],
+  javascript: ["this", "prototype", "closure", "syntax"],
   vuepress: ["started_vue", "custom_theme", "deploy"],
   algorithm: ["graph_search"],
   etc: [{ git: [] }, "markdown"],
