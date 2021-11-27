@@ -18,7 +18,7 @@ div ~ p {
 }
 ```
 
-<iframe height="330" style="width: 100%;" scrolling="no" title="CSS Selector_adjacent-sibling-selector" src="https://codepen.io/je0489/embed/YzxJMRK?default-tab=html%2Cresult&editable=true" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+<iframe height="330" style="width: 100%;" scrolling="no" title="CSS Selector_adjacent-sibling-selector" src="https://codepen.io/je0489/embed/YzxJMRK?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href="https://codepen.io/je0489/pen/YzxJMRK">
   CSS Selector_adjacent-sibling-selector</a> by jieun jang (<a href="https://codepen.io/je0489">@je0489</a>)
   on <a href="https://codepen.io">CodePen</a>.
@@ -34,7 +34,7 @@ div + p {
 }
 ```
 
-<iframe height="340" style="width: 100%;" scrolling="no" title="CSS Selector_general-sibling-selector" src="https://codepen.io/je0489/embed/eYEPodG?default-tab=html%2Cresult&editable=true" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+<iframe height="340" style="width: 100%;" scrolling="no" title="CSS Selector_general-sibling-selector" src="https://codepen.io/je0489/embed/eYEPodG?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href="https://codepen.io/je0489/pen/eYEPodG">
   CSS Selector_general-sibling-selector</a> by jieun jang (<a href="https://codepen.io/je0489">@je0489</a>)
   on <a href="https://codepen.io">CodePen</a>.
@@ -63,7 +63,7 @@ div + p {
 
 "속성값"이 하나의 단어로 포함되는 요소인 경우 style이 적용된다. 단어는 띄어쓰기를 기준으로 인식되며 [title~="food"]인 경우 `food apple`은 포함되지만 `food-banana`은 포함되지 않는다.
 
-<iframe height="300" style="width: 100%;" scrolling="no" title="CSS Selector_selector-attribute" src="https://codepen.io/je0489/embed/bGrmyav?default-tab=html%2Cresult&editable=true" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+<iframe height="300" style="width: 100%;" scrolling="no" title="CSS Selector_selector-attribute" src="https://codepen.io/je0489/embed/bGrmyav?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href="https://codepen.io/je0489/pen/bGrmyav">
   CSS Selector_selector-attribute</a> by jieun jang (<a href="https://codepen.io/je0489">@je0489</a>)
   on <a href="https://codepen.io">CodePen</a>.
@@ -73,7 +73,7 @@ div + p {
 
 "속성값"으로 시작하는 단어의 요소인 경우 style이 적용된다. 하지만, "속성값"이 <u>단어 완전체라면 포함되지 않는다.</u> [title|="food"]인 경우 `food-banana`는 포함되지만 `food apple`은 포함되지 않는다.
 
-<iframe height="300" style="width: 100%;" scrolling="no" title="CSS Selector_selector-attribute" src="https://codepen.io/je0489/embed/NWvOVXM?default-tab=html%2Cresult&editable=true" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+<iframe height="300" style="width: 100%;" scrolling="no" title="CSS Selector_selector-attribute" src="https://codepen.io/je0489/embed/NWvOVXM?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href="https://codepen.io/je0489/pen/NWvOVXM">
   CSS Selector_selector-attribute</a> by jieun jang (<a href="https://codepen.io/je0489">@je0489</a>)
   on <a href="https://codepen.io">CodePen</a>.
@@ -83,7 +83,7 @@ div + p {
 
 "속성값"으로 시작되는 단어의 요소인 경우 style이 적용된다. "속성값"이 단어 완전체여도 포함된다. [title^="food"]인 경우 `food apple`와 `food-banana`가 모두 포함된다.
 
-<iframe height="300" style="width: 100%;" scrolling="no" title="CSS Selector_selector-attribute-3" src="https://codepen.io/je0489/embed/WNEaVNQ?default-tab=html%2Cresult&editable=true" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+<iframe height="300" style="width: 100%;" scrolling="no" title="CSS Selector_selector-attribute-3" src="https://codepen.io/je0489/embed/WNEaVNQ?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href="https://codepen.io/je0489/pen/WNEaVNQ">
   CSS Selector_selector-attribute-3</a> by jieun jang (<a href="https://codepen.io/je0489">@je0489</a>)
   on <a href="https://codepen.io">CodePen</a>.

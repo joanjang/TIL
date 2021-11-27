@@ -119,7 +119,7 @@ selector {
 }
 ```
 
-<iframe height="300" style="width: 100%;" scrolling="no" title="CSS  Animation_animation" src="https://codepen.io/je0489/embed/JjyQNMN?default-tab=css%2Cresult&editable=true" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+<iframe height="300" style="width: 100%;" scrolling="no" title="CSS  Animation_animation" src="https://codepen.io/je0489/embed/JjyQNMN?default-tab=css%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href="https://codepen.io/je0489/pen/JjyQNMN">
   CSS  Animation_animation</a> by jieun jang (<a href="https://codepen.io/je0489">@je0489</a>)
   on <a href="https://codepen.io">CodePen</a>.
@@ -134,7 +134,7 @@ selector {
 - alternate: 정방향과 역방향을 번갈아가며 애니메이션 재생시킴. (홀수는 정방향/짝수는 역방향)
 - alternate-reverse: 역방향과 정방향을 번갈아가며 애니메이션 재생시킴. (홀수는 역방향/짝수는 정방향)
 
-<iframe height="300" style="width: 100%;" scrolling="no" title="CSS  Animation_animation-direction" src="https://codepen.io/je0489/embed/XWaLaGr?default-tab=css%2Cresult&editable=true" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+<iframe height="300" style="width: 100%;" scrolling="no" title="CSS  Animation_animation-direction" src="https://codepen.io/je0489/embed/XWaLaGr?default-tab=css%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href="https://codepen.io/je0489/pen/XWaLaGr">
   CSS  Animation_animation-direction</a> by jieun jang (<a href="https://codepen.io/je0489">@je0489</a>)
   on <a href="https://codepen.io">CodePen</a>.
@@ -149,7 +149,7 @@ selector {
 - both: forwards와 backwards를 모두 유지
 - none: 별도의 상태를 설정하지 않음
 
-<iframe height="300" style="width: 100%;" scrolling="no" title="CSS  Animation_animation-fill-mode" src="https://codepen.io/je0489/embed/RwZzZOg?default-tab=css%2Cresult&editable=true" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+<iframe height="300" style="width: 100%;" scrolling="no" title="CSS  Animation_animation-fill-mode" src="https://codepen.io/je0489/embed/RwZzZOg?default-tab=css%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href="https://codepen.io/je0489/pen/RwZzZOg">
   CSS  Animation_animation-fill-mode</a> by jieun jang (<a href="https://codepen.io/je0489">@je0489</a>)
   on <a href="https://codepen.io">CodePen</a>.
@@ -159,7 +159,7 @@ selector {
 
 애니메이션 실행 상태를 정의하는 속성이다. 속성값으로는 running(재생)과 paused(일시정지)가 있다.
 
-<iframe height="330" style="width: 100%;" scrolling="no" title="CSS  Animation_animation-play-state" src="https://codepen.io/je0489/embed/wvqLqbj?default-tab=js%2Cresult&editable=true" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+<iframe height="330" style="width: 100%;" scrolling="no" title="CSS  Animation_animation-play-state" src="https://codepen.io/je0489/embed/wvqLqbj?default-tab=js%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href="https://codepen.io/je0489/pen/wvqLqbj">
   CSS  Animation_animation-play-state</a> by jieun jang (<a href="https://codepen.io/je0489">@je0489</a>)
   on <a href="https://codepen.io">CodePen</a>.

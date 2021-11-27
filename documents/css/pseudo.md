@@ -21,7 +21,7 @@
 
 본인 또는 자손이 focusing된 요소를 선택하는 동적 의사 클래스이다.
 
-<iframe height="250" style="width: 100%;" scrolling="no" title="CSS Psedo-focus" src="https://codepen.io/je0489/embed/gOxqjWR?default-tab=css%2Cresult&editable=true" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+<iframe height="250" style="width: 100%;" scrolling="no" title="CSS Psedo-focus" src="https://codepen.io/je0489/embed/gOxqjWR?default-tab=css%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href="https://codepen.io/je0489/pen/gOxqjWR">
   CSS Psedo-focus</a> by jieun jang (<a href="https://codepen.io/je0489">@je0489</a>)
   on <a href="https://codepen.io">CodePen</a>.
@@ -31,7 +31,7 @@
 
 현재 활성화된 target 요소를 선택하는 상태 의사 클래스이다. 반드시 `ID와 함께` 써야한다!
 
-<iframe height="270" style="width: 100%;" scrolling="no" title="CSS Psedo-enabled" src="https://codepen.io/je0489/embed/gOxqjJe?default-tab=css%2Cresult&editable=true" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+<iframe height="270" style="width: 100%;" scrolling="no" title="CSS Psedo-enabled" src="https://codepen.io/je0489/embed/gOxqjJe?default-tab=css%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href="https://codepen.io/je0489/pen/gOxqjJe">
   CSS Psedo-enabled</a> by jieun jang (<a href="https://codepen.io/je0489">@je0489</a>)
   on <a href="https://codepen.io">CodePen</a>.
@@ -41,7 +41,7 @@
 
 특정 범위 내의 값과 특정 범위를 벗어나는 값을 가지는 input 요소를 선택하는 상태 의사 클래스이다.
 
-<iframe height="300" style="width: 100%;" scrolling="no" title="CSS Psedo-range" src="https://codepen.io/je0489/embed/YzxBONe?default-tab=css%2Cresult&editable=true" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+<iframe height="300" style="width: 100%;" scrolling="no" title="CSS Psedo-range" src="https://codepen.io/je0489/embed/YzxBONe?default-tab=css%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href="https://codepen.io/je0489/pen/YzxBONe">
   CSS Psedo-range</a> by jieun jang (<a href="https://codepen.io/je0489">@je0489</a>)
   on <a href="https://codepen.io">CodePen</a>.
@@ -65,7 +65,7 @@
 - `:empty`: 자식 요소를 가지고 있지 않는 요소 선택. **자식뿐 아니라 text도 없어야함**
 - `:root`: 최상위 요소. 즉, **html 태그**를 의미함!
 
-<iframe height="410" style="width: 100%;" scrolling="no" title="CSS Psedo-structure" src="https://codepen.io/je0489/embed/Jjyxagv?default-tab=css%2Cresult&editable=true" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+<iframe height="410" style="width: 100%;" scrolling="no" title="CSS Psedo-structure" src="https://codepen.io/je0489/embed/Jjyxagv?default-tab=css%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href="https://codepen.io/je0489/pen/Jjyxagv">
   CSS Psedo-structure</a> by jieun jang (<a href="https://codepen.io/je0489">@je0489</a>)
   on <a href="https://codepen.io">CodePen</a>.
