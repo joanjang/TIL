@@ -1,26 +1,19 @@
-const fileList = {
-  htmlcss: [
-    { web: ["web"], html: ["dom"], css: ["selector", "pseudo", "animation"] },
-  ],
-  javascript: ["this", "prototype", "closure", "syntax"],
-  vuepress: ["started_vue", "custom_theme", "deploy"],
-  algorithm: ["graph_search"],
-  etc: [{ git: [] }, "markdown"],
-};
+const FILES = require("./filelist");
 
 const getRoutes = () => {
-  const routes = {};
+  const routes = {},
+    pathFormat = (key, nm) => `${key}/${nm}.md`;
 
   const forObject = (files) =>
     Object.keys(files).reduce((acc, key) => {
-      acc[key] = files[key].map((name) => `${key}/${name}.md`);
+      acc[key] = files[key].map((name) => pathFormat(key, name));
       return acc;
     }, {});
 
-  for (const [key, files] of Object.entries(fileList))
+  for (const [key, files] of Object.entries(FILES))
     Object.assign(routes, {
       [key]: files.map((name) =>
-        typeof name === "string" ? `${key}/${name}.md` : forObject(name)
+        typeof name === "string" ? pathFormat(key, name) : forObject(name)
       ),
     });
 
