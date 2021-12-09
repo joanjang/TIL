@@ -10,6 +10,7 @@ module.exports = {
     "webpack",
     "syntax",
   ],
+  react: ["styles-components"],
   vuepress: ["started_vue", "custom_theme", "deploy"],
   algorithm: ["graph_search"],
   etc: [{ git: [] }, "markdown"],
