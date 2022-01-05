@@ -13,5 +13,5 @@ module.exports = {
   react: ["hooks", "styles-components"],
   vuepress: ["started_vue", "custom_theme", "deploy"],
   algorithm: ["graph_search"],
-  etc: [{ git: [] }, "markdown"],
+  etc: [{ git: ["error"] }, "markdown"],
 };
