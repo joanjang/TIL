@@ -1,4 +1,4 @@
-# 클로저 (Closure)
+# Closure 클로저
 
 ---
 
@@ -46,7 +46,7 @@ lexical environment는 클로저와 아주 밀접한 관계가 있다. MDN에서
 
 클로저는 함수가 생성될 때 본인뿐 아니라 상위 스코프의 정보까지 가지고 있어야 하므로 MDN에서는 클로저가 불필요하게 사용되는 것은 처리 속도와 메모리 소비 측면에서 부정적인 영향을 끼친다고 한다. 그럼 어떤 상황에서 클로저를 사용하는 게 좋을까?
 
-### 전역 변수 대체
+### 1. 전역 변수 대체
 
 전역 변수를 선언하지 않아도 클로저를 통해 `외부 함수의 변수를 전역 변수처럼 사용해서 값을 변경`할 수 있다.
 
@@ -69,11 +69,11 @@ handleCounter(); // ②
   on <a href="https://codepen.io">CodePen</a>.
 </iframe>
 
-### java의 프라이빗 메소드
+### 2. java의 프라이빗 메소드
 
 자바스크립트는 별도의 private 키워드가 없지만, 클로저를 통해 java의 private method처럼 일부 접근을 제한할 수 있다. `클로저를 이용한 모듈 패턴`을 구현하여 함수가 아닌 객체로 감싸진 함수로 캡슐화해서 값을 리턴시킨다.
 
-아래는 위 예제에 초기화 기능이 추가된 소스이다. 외부 함수 counter()의 내부 함수를 캡슐화하여 increase()와 reset() 함수를 정의했다. ① handleCounter.increase() 함수 호출 시 기존과 동일하게 count 값을 갱신한 후 리턴할 것이다. 그리고 ② handleCounter.reset()는 count 값을 0으로 변경시킨 후 리턴될 것이다.
+아래는 위 예제에 초기화 기능이 추가된 소스이다. 외부 함수 counter()의 내부 함수를 캡슐화하여 increase()와 reset() 함수를 정의했다. ① handleCounter.increase() 함수 호출 시 기존과 동일하게 count 값을 갱신한 후 리턴할 것이다. 그리고 ② handleCounter.reset()는 count 값을 0으로 변경한 후 리턴될 것이다. (count 값을 인자로 받아서 값을 변경할 수도 있음)
 
 ```js
 const counter = (count = 0) => {

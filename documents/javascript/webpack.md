@@ -9,7 +9,7 @@ Webpack은 `모든 브라우저가 이해할 수 있는 형태로 변환`시켜�
 webpack과 webpack-cli를 설치한다. webpack-cli는 콘솔에서 webpack을 실행할 수 있게 도와주는 커맨드 도구이다.
 
 ```md
-npm -i webpack webpack-cli -D
+npm i webpack webpack-cli -D
 ```
 
 ## config
@@ -19,15 +19,29 @@ npm -i webpack webpack-cli -D
 - entry: 변경 대상 소스 파일 (type = string | [string] | { entryChunkName: string })
 - output: 변환된 결과물
   - filename: 파일명
-  - path: 결과물을 위치할 **절대** 경로. path와 \_\_dirname으로 절대 경로를 얻을 수 있음.
+  - path: 결과물을 위치할 **절대** 경로. path와 \_\_dirname으로 절대 경로를 얻을 수 있음
+  - clean: **true** 로 지정하는 경우 old output은 지워지고 new output이 생성됨
 
 ```js
 const path = require("path");
+// 1. type: string
 module.exports = {
-  entry: "src/main.js",
+  entry: "src/index.js",
   output: {
-    filename: "main.js",
-    path: path.resolve(__dirname, "assets", "js"), // (=) ./assets/js
+    filename: "index.js",
+    path: path.resolve(__dirname, "dist", "js"), // (=) ./dist/js
+  },
+};
+
+// 2. type: object
+module.exports = {
+  entry: {
+    index: "src/index.js",
+    setting: "src/setting.js",
+  }
+  output: {
+    filename: "js/[name].js",
+    path: path.resolve(__dirname, "dist"),
   },
 };
 ```
@@ -37,7 +51,7 @@ module.exports = {
 {
   "script": {
     //...
-    "assets": "webpack"
+    "dist": "webpack"
   }
 }
 ```
@@ -87,14 +101,14 @@ module.exports = {
 {
   "script": {
     //...
-    "assets": "webpack mode=development"
+    "dist": "webpack mode=development"
   }
 }
 ```
 
 ## plug-in
 
-사이드 프로젝트 진행 시 참고할만한 플러그인을 정리한다.
+사이드 프로젝트 진행 시 참고할만한 플러그인을 정리한다. 플러그인은 output 바로 전에 수행된다. entry > loader > plug-in > output 순!
 
 ```js
 const plugName = require("new-plugin");
@@ -111,6 +125,39 @@ module.exports = {
 ### MiniCssExtractPlugin
 
 css 별도의 파일로 추출하는 플러그인으로, "style-loader"는 css style이 적용된 js로 변환되는데 이를 별도의 css 파일로 추출하는 플러그인이다.
+
+```md
+npm i -D mini-css-extract-plugin
+```
+
+```js
+{
+  plugins: [
+    new HtmlWebPackPlugin({
+      filename: "styles.css",
+    }),
+  ];
+}
+```
+
+### HtmlWebpackPlugin
+
+/<script/>로 로드한 html 파일을 자동으로 생성해 주는 plugin. 설정의 따라 새로운 html 파일을 생성할 수도, 기존의 html에 번들된 파일을 <script />로 로드한 html 파일을 생성 할 수도 있다.
+
+```md
+npm i -D html-webpack-plugin
+```
+
+```js
+{
+  plugins: [
+    new HtmlWebPackPlugin({
+      template: "복사 대상 파일 경로",
+      filename: "생성할 파일명",
+    }),
+  ];
+}
+```
 
 ### Reference
 

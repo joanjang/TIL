@@ -14,7 +14,8 @@
 > [Color Space](https://mycolor.space/) 색상 조합 팔레트  
 > [CSS Gradient](https://cssgradient.io/) 그레디언트  
 > [Shape Divider](https://shapedivider.app) 디자인 요소가 있는 구분선..?  
-> [Haikei](https://haikei.app) SVG
+> [Haikei](https://haikei.app) SVG  
+> [FLAT UI COLORS](https://flatuicolors.com/) palette
 >
 > > 앱/웹 디자인 Reference  
 > > [dribble](https://dribbble.com)
@@ -38,8 +39,10 @@
 ### ETC
 
 > [Frontend Developer Loadmap 2021ver.](https://roadmap.sh/frontend)  
+> [variable naming](https://www.curioustore.com/#!/)  
 > [해커랭크(SQLCertificate)](https://softworking.tistory.com/502?category=775346)  
 > [To-Do-List](https://sunnyk.tistory.com/category/FE%EA%B0%9C%EB%B0%9C%EC%9D%84%20%EC%9C%84%ED%95%9C%20JS%20%EC%8A%A4%ED%84%B0%EB%94%94)  
 > [Figma와 Zeplin 통합 버전 2.0 소개글](https://m.blog.naver.com/tangunsoft/222101958092) 단군소프트 블로그  
 > [kaffeine](https://kaffeine.herokuapp.com/) My herokuApp will never go to sleep  
-> [좋은 git commit 메시지를 위한 영어 사전](https://blog.ull.im/engineering/2019/03/10/logs-on-git.html) How to write a git commit message
+> [좋은 git commit 메시지를 위한 영어 사전](https://blog.ull.im/engineering/2019/03/10/logs-on-git.html) How to write a git commit message  
+> [favicon 변환 사이트](https://www.freefavicon.com/icongen.php)

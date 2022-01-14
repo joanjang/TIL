@@ -56,7 +56,7 @@ function Person(location, age) {
 
 <img src="../image/javascript/prototype_object_person_structure.png" alt="prototype_object_structure(function person)" width="500px"/>
 
-constructor 속성은 본인 함수 객체를 가리키고 prototype 속성은 prototype 객체ㄱ를 가리킨다. prototype 객체와 함수 Person 객체는 constructor과 prototype 속성을 통해 서로 참조하는 관계이다!
+constructor 속성은 본인 함수 객체를 가리키고 prototype 속성은 prototype 객체를 가리킨다. prototype 객체와 함수 Person 객체는 constructor과 prototype 속성을 통해 서로 참조하는 관계이다!
 
 <img src="../image/javascript/prototype_object_person_constructor.png" alt="prototype_object_constructor_console" width="400px"/>
 

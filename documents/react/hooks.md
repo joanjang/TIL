@@ -1,4 +1,4 @@
-# Hooks
+# Hook API
 
 ---
 
@@ -138,34 +138,29 @@ history.block(({ location, retry }) => {
 
 location 객체를 리턴하는 hook이다. location 객체와 useLocation의 차이점은 **생명주기**이다. location 객체는 화면이 완전히 이동하기 전까지 유지되고 useLocation은 유지되지 않고 값이 바로 변경된다.
 
-- pathname: url 도메인 다음의 path
-- search: url의 query string - 식별자 ?
-- hash: url의 hash fragment - 식별자 #
-- state: 현재 location 내에 저장된 객체
-
 ```js
 const location = useLocation();
-/** history.push({ pathname: /search?user=jieun#id=12", state: { hasData: true })를 수행한 경우
+/** history.push({ pathname: "/search?user=jieun#id=12", state: { hasData: true })를 수행한 경우
 {
   key: "u1sal3"
   pathname: "/search",
   search: "?user=jieun",
   hash: "#id=12",
-  state: { 
+  state: {
     hasData: true
   }
-} 
+}
 */
 ```
+
+- pathname: url 도메인 다음의 path
+- search: url의 query string - `식별자 ?`
+- hash: url의 hash fragment - `식별자 #`
+- state: 현재 location 내에 저장된 객체
 
 ### useRouteMatch
 
 현재 url을 Route와 비교하는 hook이다. 입력한 path가 현재 location과 동일하지 않은 경우 `null`을 반환한다.
-
-- path: url pattern
-- url: 현재 url
-- isExact: path의 매치 여부
-- params: url에서 key/value로 구성된 object
 
 ```js
 // match1 === match2
@@ -187,9 +182,14 @@ const match2 = useRouteMatch({
 */
 ```
 
+- path: url pattern
+- url: 현재 url
+- isExact: path의 매치 여부
+- params: url에서 key/value로 구성된 object
+
 ### useParams
 
-url의 파라미터를 받는 hook이다.
+useRouteMatch내의 파라미터를 받는 hook이다.
 
 ```js
 const params = useParams();

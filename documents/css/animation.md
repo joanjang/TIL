@@ -91,7 +91,7 @@ selector {
 
 기본 키워드 외로 **cubic-bezier(p0,p1,p2,p3)** 또는 **steps(count, term)** 으로 값을 지정할 수 있다. cubic-bezier는 [www.cubic-bezier.com](https://cubic-bezier.com/)을 참고하여 원하는 속도 값을 가져올 수 있다!
 
-<p class="codepen" data-height="450" data-default-tab="result" data-slug-hash="RwZOGZj" data-editable="true" data-user="je0489" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+<p class="codepen" data-height="450" data-default-tab="result" data-slug-hash="RwZOGZj" data-user="je0489" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
   <span>See the Pen <a href="https://codepen.io/je0489/pen/RwZOGZj">
   CSS  Animation_transition-timing-function</a> by jieun jang (<a href="https://codepen.io/je0489">@je0489</a>)
   on <a href="https://codepen.io">CodePen</a>.</span>

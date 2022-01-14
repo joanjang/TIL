@@ -8,7 +8,7 @@
   <sup>[1]</sup> styled-components는 css-in-js 중 가장 인기 있는 라이브러리이다. <a href="#etc">> Link</a>
 </div>
 
-## 설치 및 형식
+## 설치 및 정의 방식
 
 styled-components 라이브러리를 설치한 후 아래와 같은 형식으로 component별로 css를 작성한다! styled 키워드를 통해 element 또는 컴포넌트별로 css를 작성할 수 있다. 변수명은 파스칼 기법으로 선언하고 `(백틱) 안에 css 문법과 template literal 문법을 기반으로 작성한다.
 
