@@ -41,3 +41,27 @@ git remote add old [클론 대상 레파짓.git] && git fetch --unshallow old
 
 - [backlog 깃 튜토리얼 - Fetch](https://backlog.com/git-tutorial/kr/stepup/stepup3_2.html)
 - [https://stackoverflow.com/questions/28983842](https://stackoverflow.com/questions/28983842/remote-rejected-shallow-update-not-allowed-after-changing-git-remote-url)
+
+## 2. Can't automatically merge
+
+PR 시 github에서 아래와 같은 메세지가 표시됐다. 그 이유는 다른 브랜치와 merge한 파일과 현재 브랜치에서 변경한 파일이 충돌 났기 때문이다.
+
+![error_in_github](../image/git/error_2_cant-automatically-merge.png)
+
+### 해결
+
+4번까지의 과정을 거치면 아래와 같이 충돌된 부분이 표시된다. 머지 작업을 완료한 후 5번을 수행하면 해결~
+
+```md
+1. checkout master
+2. git pull
+3. checkout 충돌난 브랜치
+4. git merge master
+5. commit & push
+```
+
+<img src="../image/git/error_2_ conflict.png" alt="merge" width="600px" />
+
+### Reference
+
+- [https://stackoverflow.com/questions/31973318](https://stackoverflow.com/questions/31973318/github-cant-automatically-merge)
