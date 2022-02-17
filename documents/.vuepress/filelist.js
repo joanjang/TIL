@@ -1,9 +1,13 @@
 module.exports = {
   htmlcss: [
-    { web: ["web"], html: ["dom"], css: ["selector", "pseudo", "animation"] },
+    {
+      web: ["web"],
+      html: ["dom"],
+      css: ["selector", "pseudo", "animation"],
+    },
   ],
   javascript: [
-    { ES2015: ["class"] },
+    { ES2015: ["class", "generator"] },
     "this",
     "prototype",
     "closure",
