@@ -2,14 +2,19 @@
 
 ---
 
-함수의 실행이 종료된 후에도 종료된 함수의 내부 함수를 통해 종료된 함수의 변수에 접근할 수 있는데, 이는 클로저가 생성됐기 때문에 가능한 일이다. 여기서 중요한 키포인트는 내부 함수가 `리턴 함수`여야 한다는 것!
+함수의 실행이 종료된 후에도 종료된 함수의 내부 함수를 통해 종료된 함수의 변수에 접근할 수 있는데, 이는 클로저가 생성됐기 때문에 가능한 일이다. 여기서 중요한 키포인트는 내부 함수가 <sup>[1]</sup>`일급 객체`여야 한다는 것!
+
+<div class="footnote">
+  <sup>[1]</sup> 클로저는 함수를 일급 객체로 취급하는 프로그래밍 언어에서 사용되는 중요한 특성이다 !!
+</div>
 
 ## closure
 
 ```js
 function func() {
   const name = "jieun";
-  return () => console.log(name);
+  const innerFunc = () => `Hello My name is... ${name}`;
+  return innerFunc;
 }
 
 /**
@@ -17,10 +22,10 @@ function func() {
  * 함수 func()는 메모리에서 삭제된다.
  **/
 const me = func();
-me(); // jieun
+me(); // Hello My name is... jieun
 ```
 
-함수 func()의 실행이 종료된 후에도 리턴된 내부 함수를 통해 지역 변수(name)에 접근이 가능하다. 즉, 클로저를 통해 실행이 종료된 외부 함수의 스코프에 접근을 할 수 있다는 뜻이다.
+함수 func()의 실행이 종료된 후에도 내부 함수를 통해 지역 변수(name)에 접근이 가능하다. 즉, 클로저를 통해 실행이 종료된 외부 함수의 스코프에 접근을 할 수 있다는 뜻이다.
 
 ## lexical environment
 
@@ -31,7 +36,8 @@ Lexical Environment는 함수 내부의 정보와 상위 스코프의 정보가 
 ```js {4}
 function func() {
   const name = "jieun";
-  return () => console.log(name);
+  const innerFunc = () => `Hello My name is... ${name}`;
+  return innerFunc;
   // 함수 생성 시, 익명 함수의 lexcical environemnt에 함수 func()의 정보를 참조하고 있음
 }
 ```
@@ -46,7 +52,7 @@ lexical environment는 클로저와 아주 밀접한 관계가 있다. MDN에서
 
 클로저는 함수가 생성될 때 본인뿐 아니라 상위 스코프의 정보까지 가지고 있어야 하므로 MDN에서는 클로저가 불필요하게 사용되는 것은 처리 속도와 메모리 소비 측면에서 부정적인 영향을 끼친다고 한다. 그럼 어떤 상황에서 클로저를 사용하는 게 좋을까?
 
-### 1. 전역 변수 대체
+### 1. 전역 변수 사용 억제
 
 전역 변수를 선언하지 않아도 클로저를 통해 `외부 함수의 변수를 전역 변수처럼 사용해서 값을 변경`할 수 있다.
 
@@ -69,7 +75,7 @@ handleCounter(); // ②
   on <a href="https://codepen.io">CodePen</a>.
 </iframe>
 
-### 2. java의 프라이빗 메소드
+### 2. java의 프라이빗 메소드 - 정보 은닉
 
 자바스크립트는 별도의 private 키워드가 없지만, 클로저를 통해 java의 private method처럼 일부 접근을 제한할 수 있다. `클로저를 이용한 모듈 패턴`을 구현하여 함수가 아닌 객체로 감싸진 함수로 캡슐화해서 값을 리턴시킨다.
 
@@ -100,3 +106,4 @@ handleCounter.reset(); // ②
 
 - [MDN 공식 문서 - Closures](https://developer.mozilla.org/ko/docs/Web/JavaScript/Closures)
 - 황준일님의 TIL [자바스크립트 실행 컨텍스트](https://junilhwang.github.io/TIL/Javascript/Domain/Execution-Context)
+- Youtube 생활코딩님의 [JavaScript - closure](https://www.youtube.com/watch?v=bwwaSwf7vkE)
