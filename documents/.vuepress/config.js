@@ -52,11 +52,11 @@ module.exports = {
             items: [
               {
                 text: "GitHub",
-                link: "https://github.com/je0489/",
+                link: "https://github.com/joanjang/",
               },
               {
                 text: "Portfolio",
-                link: "https://je0489.github.io/simple-portfolio/",
+                link: "https://joanjang.github.io/simple-portfolio/",
               },
             ],
           },
