@@ -2,7 +2,7 @@
 
 ---
 
-[www.je0489.github.io/TIL](https://je0489.github.io/TIL/)
+[www.joanjang.github.io/TIL](https://joanjang.github.io/TIL/)
 
 ![TIL_preview](./til_preview.gif)
 
