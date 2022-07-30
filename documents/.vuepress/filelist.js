@@ -16,6 +16,6 @@ module.exports = {
   ],
   react: ['hooks', 'styles-components'],
   vuepress: ['started_vue', 'custom_theme', 'deploy'],
-  algorithm: ['timeComplexity', 'graph_search'],
-  etc: [{ review: [{ '2022년': 'april' }], git: ['error', 'command'] }, 'markdown']
+  algorithm: ['graph_search'],
+  etc: [{ git: ['error', 'command'] }, 'markdown']
 };
